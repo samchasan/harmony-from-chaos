@@ -1,16 +1,16 @@
 var kinectron = null;
 
 function connectKinect() {
-<<<<<<< HEAD
+// <<<<<<< HEAD
     var address = {
         host: '10.17.206.22',
         port: 9001,
         path: '/'
     };
-=======
+// =======
     var IPaddress = "10.17.206.22";
 console.log("in connect kinect")
->>>>>>> fbe746c46cdf8ab6d6e7b601aa361019c7b3a587
+// >>>>>>> fbe746c46cdf8ab6d6e7b601aa361019c7b3a587
 
   frameRate(30);
 
