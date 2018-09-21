@@ -2,7 +2,7 @@ var kinectron = null;
 
 function connectKinect() {
     var address = {
-        host: '172.16.241.16',
+        host: '10.17.206.22',
         port: 9001,
         path: '/'
     };
