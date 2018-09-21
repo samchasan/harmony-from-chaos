@@ -2,14 +2,15 @@ var kinectron = null;
 
 function connectKinect() {
     var IPaddress = "10.17.206.22";
+console.log("in connect kinect")
 
   frameRate(30);
 
     kinectron = new Kinectron(IPaddress);
     kinectron.makeConnection();
+    console.log("Attempted connection")
     kinectron.startTrackedBodies(trackBody);
     // kinectron.startMultiFrame(["body","joints"],bodyTracked);
-
 }
 
 // Upper Body
@@ -69,6 +70,8 @@ function drawBodylines() {
 
 
 function trackBody(body) {
+    
+    console.log("intrackbody")
 // function bodyTracked(bodies) {
 
   
