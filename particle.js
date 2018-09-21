@@ -13,8 +13,8 @@ function makeParticles(){
         movers.push(new Particle(random(width), random(height),
             random(0.01, 0.6), random(150), random(50), random(250)));
     }
-    attractorLhand = new Attractor(mouseX, mouseY);
-    attractorRhand = new Attractor(mouseX, mouseY);
+    attractorLhand = new Attractor(leftHandX, leftHandY);
+    attractorRhand = new Attractor(rightHandX, rightHandY);
 }
 
 
@@ -35,7 +35,7 @@ function drawParticles() {
         movers[i].display();
     }
     // attractor.display();
-    attractorRhand.update(mouseX, mouseY);
+    attractorRhand.update(rightHandX, rightHandY);
     attractorLhand.update(leftHandX, leftHandY);
 }
 
