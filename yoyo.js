@@ -18,7 +18,7 @@ function makeYoyos() {
 
 
 function drawSprings(){ 
-    Rhand = createVector(mouseX, mouseY)
+    Rhand = createVector(rightHandX, rightHandY)
     Lhand = createVector(leftHandX, leftHandY)
     Neck = createVector(xNeck, yNeck)
     Mhip = createVector(MxHip, MyHip)
