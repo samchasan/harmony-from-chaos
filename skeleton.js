@@ -1,15 +1,11 @@
 var kinectron = null;
 
 function connectKinect() {
-    var address = {
-        host: '10.17.206.22',
-        port: 9001,
-        path: '/'
-    };
+    var IPaddress = "10.17.206.22";
 
   frameRate(30);
 
-    kinectron = new Kinectron('kinectron', address);
+    kinectron = new Kinectron(IPaddress);
     kinectron.makeConnection();
     kinectron.startTrackedBodies(trackBody);
     // kinectron.startMultiFrame(["body","joints"],bodyTracked);
